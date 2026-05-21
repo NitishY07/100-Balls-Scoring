@@ -5,7 +5,9 @@
   "scripts": {
     "server": "npm run dev --prefix server",
     "client": "npm run dev --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm install --prefix server"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
